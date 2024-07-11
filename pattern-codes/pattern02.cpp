@@ -7,9 +7,14 @@ int main(){
   *****
  *******
 *********
+*********
+ *******
+  *****
+   ***
+    *
 5*/
 
-int i,n=5,k=0;
+int i,n=10,k=0;
 for(i=1; i<=n;i++){
     for(int j=i;j<=n-1;j++){
         cout<<" ";
@@ -21,5 +26,20 @@ for(i=1; i<=n;i++){
     k++;
 }
 cout<<k;
+cout<<"-------- \n";
+int s=0;
+
+for( i=1;i<=n;i++){
+    for(int j=1; j<=i-1;j++){
+        cout<<" ";
+    }
+    for(int j=1;j<=2*(n-i)+1;j++){
+        cout<<"*";
+        
+    }
+    cout<<"\n"; 
+    s++;
+}
+cout<<s;
 return 0;
 }
